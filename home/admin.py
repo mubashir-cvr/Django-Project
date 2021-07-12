@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Users, Service, Servicer
+from .models import Users, Service, Servicer,JOb
 
 # Register your models here.
 admin.site.register(Users)
@@ -11,3 +11,5 @@ class ServiceAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Servicer)
+
+admin.site.register(JOb)
