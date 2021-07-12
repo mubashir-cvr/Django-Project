@@ -1,0 +1,12 @@
+{% extends 'base.html' %} <!-- Using Master page (base.html) or {% incude 'base.html' %}-->
+{% block content %}
+        <h1>
+            Hello {{name}}
+            <form action="add" method="post">
+                {% csrf_token %}
+                Enter :<input type="text" name="num1">
+                Enter1 :<input type="text" name="num2">
+                <input type="submit" value="add">
+            </form>
+        </h1>
+{% endblock %}
