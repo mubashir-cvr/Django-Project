@@ -1,6 +1,5 @@
 
 from django.db import models
-from django.db.models.fields.related import ForeignKey
 
 
 # Create your models here.
@@ -44,7 +43,7 @@ class Servicer(models.Model):
 class JOb(models.Model):
     id = int
     service = models.ForeignKey(Service, on_delete=models.CASCADE)
-    servicer = models.ForeignKey(Servicer,on_delete=models.CASCADE)
+    servicer = models.ForeignKey(Servicer, on_delete=models.CASCADE)
     timeTaken = models.DurationField(default=8)
     cost = models.BigIntegerField(default=0)
     rating = models.DecimalField(default=0.0, decimal_places=2, max_digits=10)
