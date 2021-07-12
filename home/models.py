@@ -49,4 +49,4 @@ class JOb(models.Model):
     rating = models.DecimalField(default=0.0, decimal_places=2, max_digits=10)
 
     def __str__(self):
-        return f"{self.service.name}"
+        return f"{self.service.name} type"
