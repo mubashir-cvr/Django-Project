@@ -35,7 +35,7 @@ jobs:
         python manage.py makemigrations home
         python manage.py migrate
         python manage.py collectstatic --noinput
-        python manage.py createsuperuser --username test1 --password 123321 --email 'blank@email.com' --noinput
+        python manage.py createsuperuser --username test1 --password 123321 --email 'blank@email.com' --noinputd
 
     # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
